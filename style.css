@@ -1,0 +1,14 @@
+
+body{background:#ffffff;color:#000;font-family:Poppins,sans-serif;padding:20px;}
+header{text-align:center;margin-bottom:30px;}
+.by{color:#0077ff;}
+.grid{display:grid;gap:20px;max-width:400px;margin:auto;}
+.btn{padding:20px;text-align:center;
+background:#0077ff;color:#fff;border-radius:14px;
+text-decoration:none;font-size:1.2rem;}
+.btn:hover{background:#0055aa;}
+.sim{margin-top:20px;padding:15px;border-radius:10px;
+background:#eef5ff;border:2px solid #0055aa;width:260px;}
+.scr{background:#000;color:#0f0;padding:10px;height:50px;border-radius:6px;margin-bottom:10px;}
+.keys{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;}
+.key{background:#0077ff;color:#fff;text-align:center;padding:12px;border-radius:8px;cursor:pointer;}

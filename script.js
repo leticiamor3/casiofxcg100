@@ -1,0 +1,1 @@
+function pressKey(k){document.getElementById('screen').textContent+=k+' ';}
