@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Números complexos – módulo e operações</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="page-body">
+  <header class="page-header">
+    <a href="index.html" class="back-link">← Voltar para a página inicial</a>
+    <div class="page-title-block">
+      <h1>Números complexos – módulo e operações</h1>
+      <p>Modo: RUN-MAT em modo complexo (a + bi)</p>
+    </div>
+  </header>
+
+  <main class="page-layout">
+    <section class="page-text">
+      <p>
+        Números complexos aparecem bastante em engenharia elétrica, principalmente em <strong>impedância</strong> e
+        <strong>fasores</strong>. Aqui você calcula módulo e interpreta parte real e imaginária no modo complexo (a + bi).
+      </p>
+
+      <h2>Questão de exemplo</h2>
+      <p class="example">
+        Uma impedância é Z = 5 + j30 Ω.<br>
+        Calcule o módulo |Z| e interprete o resultado no contexto de um circuito AC.
+      </p>
+
+      <h2 class="steps-title">Passo a passo na calculadora</h2>
+      <ol id="simSteps" class="steps-list">
+        <li data-screen="Modo complexo (a+bi)">Coloque a fx-CG100 em modo que aceite números complexos na forma <strong>a + bi</strong> (modo padrão de RUN-MAT costuma funcionar).</li>
+        <li data-screen="Digite 5+30i">Digite <strong>5+30i</strong> (usando a tecla <strong>i</strong> indicada no teclado, geralmente SHIFT + um atalho) e aperte <strong>EXE</strong>.</li>
+        <li data-screen="Abs(Ans) para módulo">Agora use a função de módulo: digite <strong>Abs(Ans)</strong> e aperte <strong>EXE</strong> para obter <strong>|Z|</strong>.</li>
+        <li data-screen="|Z| ≈ 30.41 Ω">O valor obtido será aproximadamente <strong>30,41 Ω</strong>, que é a magnitude da impedância equivalente. Interprete: é como se o circuito tivesse uma “resistência total” de 30,41 Ω à passagem da corrente AC.</li>
+      </ol>
+    </section>
+
+    <aside class="page-sim">
+      <div class="sim-card">
+        <div class="sim-header">
+          <span>Simulador fx-CG100</span>
+          <span class="sim-badge">Complexo a+bi</span>
+        </div>
+        <div id="simScreen" class="sim-screen">
+          Toque em “Próximo ▶” para ver o que apareceria na tela da calculadora em cada passo.
+        </div>
+        <div class="sim-steps-info">
+          Passo <span id="simStepNumber">1</span> de <span id="simStepTotal">0</span>
+        </div>
+        <div class="sim-controls">
+          <button id="simPrev">◀ Anterior</button>
+          <button id="simNext">Próximo ▶</button>
+        </div>
+        <p class="sim-tip">
+          Módulo de Z é muito usado para achar correntes e tensões em circuitos AC.
+        </p>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>

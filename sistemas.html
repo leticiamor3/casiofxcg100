@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistemas lineares – RREF</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="page-body">
+  <header class="page-header">
+    <a href="index.html" class="back-link">← Voltar para a página inicial</a>
+    <div class="page-title-block">
+      <h1>Sistemas lineares – RREF</h1>
+      <p>Modo: MENU → MATRIX → RREF</p>
+    </div>
+  </header>
+
+  <main class="page-layout">
+    <section class="page-text">
+      <p>
+        Aqui você resolve sistemas lineares de várias equações usando <strong>matriz aumentada</strong> e o comando
+        <strong>RREF</strong> no modo MATRIX. Isso aparece muito em equilíbrio estático, circuitos, métodos numéricos, etc.
+      </p>
+
+      <h2>Questão de exemplo</h2>
+      <p class="example">
+        Resolva o sistema 3×3:<br>
+        2x + y − z = 5<br>
+        −x + 3y + 2z = 4<br>
+        3x − y + z = 2
+      </p>
+
+      <h2 class="steps-title">Passo a passo na calculadora</h2>
+      <ol id="simSteps" class="steps-list">
+        <li data-screen="MENU → MATRIX → EDIT → MatA 3×4">Aperte <strong>MENU</strong>, selecione <strong>MATRIX</strong>, vá em <strong>EDIT</strong> e escolha <strong>MatA</strong>. Defina o tamanho como <strong>3×4</strong> (3 linhas, 4 colunas) para a matriz aumentada.</li>
+        <li data-screen="Linha1: 2, 1, -1, 5">Na linha 1, digite <strong>2, 1, -1, 5</strong>, correspondendo aos coeficientes de x, y, z e ao termo independente da primeira equação.</li>
+        <li data-screen="Linha2: -1, 3, 2, 4">Na linha 2, digite <strong>-1, 3, 2, 4</strong> para a segunda equação.</li>
+        <li data-screen="Linha3: 3, -1, 1, 2">Na linha 3, digite <strong>3, -1, 1, 2</strong> para a terceira equação.</li>
+        <li data-screen="CALC → RREF(MatA)">Volte ao menu MATRIX, entre em <strong>CALC</strong> e escolha <strong>RREF</strong>. Aplique em MatA para obter a forma reduzida.</li>
+        <li data-screen="[1 0 0 | x] [0 1 0 | y] [0 0 1 | z]">A calculadora mostrará algo equivalente a <strong>[1 0 0 | x]</strong>, <strong>[0 1 0 | y]</strong>, <strong>[0 0 1 | z]</strong>. Leia diretamente os valores de x, y e z como solução do sistema.</li>
+      </ol>
+    </section>
+
+    <aside class="page-sim">
+      <div class="sim-card">
+        <div class="sim-header">
+          <span>Simulador fx-CG100</span>
+          <span class="sim-badge">MATRIX RREF</span>
+        </div>
+        <div id="simScreen" class="sim-screen">
+          Toque em “Próximo ▶” para ver o que apareceria na tela da calculadora em cada passo.
+        </div>
+        <div class="sim-steps-info">
+          Passo <span id="simStepNumber">1</span> de <span id="simStepTotal">0</span>
+        </div>
+        <div class="sim-controls">
+          <button id="simPrev">◀ Anterior</button>
+          <button id="simNext">Próximo ▶</button>
+        </div>
+        <p class="sim-tip">
+          Para sistemas maiores, aumente o tamanho da matriz aumentada (4×5, 5×6, etc.).
+        </p>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>

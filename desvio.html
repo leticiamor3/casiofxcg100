@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Desvio padrão – fx-CG100</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="page-body">
+  <header class="page-header">
+    <a href="index.html" class="back-link">← Voltar para a página inicial</a>
+    <div class="page-title-block">
+      <h1>Desvio padrão – fx-CG100</h1>
+      <p>Modo: MENU → STAT (6) → 1-Variable (1-Var)</p>
+    </div>
+  </header>
+
+  <main class="page-layout">
+    <section class="page-text">
+      <p>
+        Aqui você aprende a calcular <strong>média</strong> e <strong>desvio padrão</strong> (amostral e populacional)
+        usando o modo <strong>STAT 1-Var</strong> da sua fx-CG100. Esse tipo de conta aparece muito em
+        laboratório, controle de qualidade, metrologia e estatística básica na engenharia.
+      </p>
+
+      <h2>Questão de exemplo</h2>
+      <p class="example">
+        Um eixo foi medido 6 vezes e os diâmetros (em mm) foram:<br>
+        39,98 ; 40,02 ; 40,01 ; 39,99 ; 40,03 ; 40,00.<br>
+        Calcule a <strong>média</strong> e o <strong>desvio padrão amostral</strong> usando a Casio fx-CG100.
+      </p>
+
+      <h2 class="steps-title">Passo a passo na calculadora</h2>
+      <ol id="simSteps" class="steps-list">
+        <li data-screen="AC/ON → MENU → STAT → 1-Var">Ligue a calculadora com <strong>AC/ON</strong>. Depois aperte <strong>MENU</strong>, escolha <strong>STAT</strong> (normalmente tecla 6) e selecione <strong>1-Var</strong>.</li>
+        <li data-screen="List1: 39.98, 40.02, 40.01, 39.99, 40.03, 40.00">Na coluna <strong>List1</strong>, digite o primeiro valor <strong>39.98</strong> e aperte <strong>EXE</strong>. Depois digite 40.02, 40.01, 39.99, 40.03 e 40.00, sempre confirmando com EXE em cada linha.</li>
+        <li data-screen="F2(CALC) → 1-Var">Quando terminar de digitar todos os valores, aperte <strong>F2 (CALC)</strong> e escolha <strong>1-Var</strong> para calcular as estatísticas.</li>
+        <li data-screen="Veja x̄ = média">Na tela de resultados, procure <strong>x̄</strong>: esse é o valor da <strong>média</strong> das medidas do eixo em milímetros.</li>
+        <li data-screen="Use sx como desvio padrão amostral">Na mesma tela, veja <strong>sx</strong> (desvio padrão amostral) e <strong>σx</strong> (desvio padrão populacional). Para amostra, use <strong>sx</strong> como resposta.</li>
+        <li data-screen="Anote x̄ e sx">Anote no seu caderno os valores que a calculadora mostrou: média <strong>x̄</strong> e desvio padrão amostral <strong>sx</strong>. Use esses valores para responder à questão.</li>
+      </ol>
+    </section>
+
+    <aside class="page-sim">
+      <div class="sim-card">
+        <div class="sim-header">
+          <span>Simulador fx-CG100</span>
+          <span class="sim-badge">STAT 1-Var</span>
+        </div>
+        <div id="simScreen" class="sim-screen">
+          Toque em “Próximo ▶” para ver o que apareceria na tela da calculadora em cada passo.
+        </div>
+        <div class="sim-steps-info">
+          Passo <span id="simStepNumber">1</span> de <span id="simStepTotal">0</span>
+        </div>
+        <div class="sim-controls">
+          <button id="simPrev">◀ Anterior</button>
+          <button id="simNext">Próximo ▶</button>
+        </div>
+        <p class="sim-tip">
+          Use outras listas de medições (por exemplo, diâmetro de tubos, massa de peças, etc.) para treinar.
+        </p>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>

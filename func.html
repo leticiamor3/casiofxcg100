@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Funções, gráfico e tabela</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="page-body">
+  <header class="page-header">
+    <a href="index.html" class="back-link">← Voltar para a página inicial</a>
+    <div class="page-title-block">
+      <h1>Funções, gráfico e tabela</h1>
+      <p>Modo: MENU → TABLE (tabela) ou MENU → GRAPH (gráfico)</p>
+    </div>
+  </header>
+
+  <main class="page-layout">
+    <section class="page-text">
+      <p>
+        Aqui você usa os modos <strong>GRAPH</strong> e <strong>TABLE</strong> para estudar o comportamento de funções,
+        ver gráficos e gerar tabelas de valores. Isso aparece muito em circuitos, controle, crescimento/decrescimento
+        e análises de engenharia em geral.
+      </p>
+
+      <h2>Questão de exemplo</h2>
+      <p class="example">
+        A corrente em um circuito é dada por:<br>
+        I(t) = 5·e<sup>−0,2t</sup>.<br>
+        Use a tabela da calculadora para encontrar I(0), I(5) e I(10).
+      </p>
+
+      <h2 class="steps-title">Passo a passo na calculadora</h2>
+      <ol id="simSteps" class="steps-list">
+        <li data-screen="MENU → TABLE">Aperte <strong>MENU</strong> e selecione <strong>TABLE</strong> para gerar uma tabela de valores.</li>
+        <li data-screen="f(x) = 5*e^(-0.2x)">No campo <strong>f(x)</strong>, digite a função usando a variável <strong>x</strong> (que representará o tempo t): <strong>5*e^(-0.2x)</strong>.</li>
+        <li data-screen="Start = 0, End = 10, Step = 1">Defina os parâmetros da tabela: <strong>Start = 0</strong>, <strong>End = 10</strong> e <strong>Step = 1</strong>, depois aperte <strong>EXE</strong>.</li>
+        <li data-screen="Veja linha x=0 → I(0)">Na tabela, procure a linha em que <strong>x = 0</strong>. O valor na coluna f(x) é <strong>I(0)</strong>.</li>
+        <li data-screen="Veja linha x=5 → I(5)">Procure a linha em que <strong>x = 5</strong> para encontrar o valor de <strong>I(5)</strong>.</li>
+        <li data-screen="Veja linha x=10 → I(10)">Procure a linha em que <strong>x = 10</strong>. O valor de f(x) nessa linha é <strong>I(10)</strong>. Use esses três valores na sua análise do circuito.</li>
+      </ol>
+    </section>
+
+    <aside class="page-sim">
+      <div class="sim-card">
+        <div class="sim-header">
+          <span>Simulador fx-CG100</span>
+          <span class="sim-badge">TABLE / GRAPH</span>
+        </div>
+        <div id="simScreen" class="sim-screen">
+          Toque em “Próximo ▶” para ver o que apareceria na tela da calculadora em cada passo.
+        </div>
+        <div class="sim-steps-info">
+          Passo <span id="simStepNumber">1</span> de <span id="simStepTotal">0</span>
+        </div>
+        <div class="sim-controls">
+          <button id="simPrev">◀ Anterior</button>
+          <button id="simNext">Próximo ▶</button>
+        </div>
+        <p class="sim-tip">
+          Use a tabela e o gráfico para entender comportamento da função antes de resolver questões analiticamente.
+        </p>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>

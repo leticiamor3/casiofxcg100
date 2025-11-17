@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Integral definida na fx-CG100</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="page-body">
+  <header class="page-header">
+    <a href="index.html" class="back-link">← Voltar para a página inicial</a>
+    <div class="page-title-block">
+      <h1>Integral definida na fx-CG100</h1>
+      <p>Modo: RUN-MAT → SHIFT → CALC → ∫</p>
+    </div>
+  </header>
+
+  <main class="page-layout">
+    <section class="page-text">
+      <p>
+        Integrais definidas aparecem em trabalho de forças variáveis, área sob a curva, carga elétrica acumulada,
+        energia e muito mais. Aqui você usa o menu de integrais da fx-CG100 no modo RUN-MAT.
+      </p>
+
+      <h2>Questão de exemplo</h2>
+      <p class="example">
+        Uma força varia com a posição segundo:<br>
+        F(x) = 3x² − 4x + 1.<br>
+        Calcule o trabalho realizado de x = 1 até x = 5 usando integral definida.
+      </p>
+
+      <h2 class="steps-title">Passo a passo na calculadora</h2>
+      <ol id="simSteps" class="steps-list">
+        <li data-screen="SHIFT → CALC → ∫( )">No modo <strong>RUN-MAT</strong>, aperte <strong>SHIFT</strong> e depois a tecla <strong>CALC</strong> para abrir o menu de cálculos especiais. Selecione a opção de <strong>integral definida ∫</strong>.</li>
+        <li data-screen="Função: 3x^2 - 4x + 1">No campo da função, digite <strong>3x^2 - 4x + 1</strong>, usando a variável x e a tecla de potência.</li>
+        <li data-screen="Limites: 1 até 5">Defina a variável de integração como <strong>x</strong>, o limite inferior como <strong>1</strong> e o limite superior como <strong>5</strong>.</li>
+        <li data-screen="EXE → resultado numérico">Aperte <strong>EXE</strong>. A calculadora retornará o valor numérico da integral, que representa o <strong>trabalho</strong> realizado pela força F(x) nesse intervalo.</li>
+      </ol>
+    </section>
+
+    <aside class="page-sim">
+      <div class="sim-card">
+        <div class="sim-header">
+          <span>Simulador fx-CG100</span>
+          <span class="sim-badge">Integral ∫</span>
+        </div>
+        <div id="simScreen" class="sim-screen">
+          Toque em “Próximo ▶” para ver o que apareceria na tela da calculadora em cada passo.
+        </div>
+        <div class="sim-steps-info">
+          Passo <span id="simStepNumber">1</span> de <span id="simStepTotal">0</span>
+        </div>
+        <div class="sim-controls">
+          <button id="simPrev">◀ Anterior</button>
+          <button id="simNext">Próximo ▶</button>
+        </div>
+        <p class="sim-tip">
+          Use integrais definidas para trabalho, área, carga acumulada e vários outros cálculos em engenharia.
+        </p>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>

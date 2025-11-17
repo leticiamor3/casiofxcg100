@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Impedância em paralelo – complexos</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="page-body">
+  <header class="page-header">
+    <a href="index.html" class="back-link">← Voltar para a página inicial</a>
+    <div class="page-title-block">
+      <h1>Impedância em paralelo – complexos</h1>
+      <p>Modo: RUN-MAT com complexos</p>
+    </div>
+  </header>
+
+  <main class="page-layout">
+    <section class="page-text">
+      <p>
+        Aqui você calcula a <strong>impedância equivalente em paralelo</strong> usando números complexos.
+        Muito útil em análise de circuitos AC, onde Z tem parte real (resistência) e imaginária (reatância).
+      </p>
+
+      <h2>Questão de exemplo</h2>
+      <p class="example">
+        Calcule a impedância equivalente de dois ramos em paralelo:<br>
+        Z₁ = 4 + j6 Ω e Z₂ = 8 − j4 Ω.<br>
+        Use a fx-CG100 para encontrar Z<sub>eq</sub>.
+      </p>
+
+      <h2 class="steps-title">Passo a passo na calculadora</h2>
+      <ol id="simSteps" class="steps-list">
+        <li data-screen="Digite Z1 = 4+6i">No modo complexo, digite <strong>4+6i</strong> e aperte <strong>EXE</strong>. Esse é Z₁.</li>
+        <li data-screen="Calcule 1/Z1 e guarde em A">Digite <strong>1/Ans</strong> e aperte <strong>EXE</strong> para calcular <strong>1/Z₁</strong>. Em seguida, armazene em A (por exemplo, usando <strong>STO → A</strong>).</li>
+        <li data-screen="Digite Z2 = 8-4i">Agora digite <strong>8-4i</strong> e aperte <strong>EXE</strong> para representar Z₂.</li>
+        <li data-screen="Calcule 1/Z2 e guarde em B">Digite <strong>1/Ans</strong> novamente para obter <strong>1/Z₂</strong> e armazene em B.</li>
+        <li data-screen="Some A+B (admitâncias)">Digite <strong>A+B</strong> e aperte <strong>EXE</strong>. O resultado é a soma das admitâncias: <strong>1/Z₁ + 1/Z₂</strong>.</li>
+        <li data-screen="Zeq = 1/Ans">Agora digite <strong>1/Ans</strong> e aperte <strong>EXE</strong>. O resultado é a impedância equivalente <strong>Zeq</strong> em paralelo.</li>
+      </ol>
+    </section>
+
+    <aside class="page-sim">
+      <div class="sim-card">
+        <div class="sim-header">
+          <span>Simulador fx-CG100</span>
+          <span class="sim-badge">Zeq paralelo</span>
+        </div>
+        <div id="simScreen" class="sim-screen">
+          Toque em “Próximo ▶” para ver o que apareceria na tela da calculadora em cada passo.
+        </div>
+        <div class="sim-steps-info">
+          Passo <span id="simStepNumber">1</span> de <span id="simStepTotal">0</span>
+        </div>
+        <div class="sim-controls">
+          <button id="simPrev">◀ Anterior</button>
+          <button id="simNext">Próximo ▶</button>
+        </div>
+        <p class="sim-tip">
+          Você pode estender o procedimento para 3 ou mais ramos, somando todas as admitâncias antes de inverter.
+        </p>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>

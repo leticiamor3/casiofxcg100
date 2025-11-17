@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Bhaskara – Equação do 2º grau</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="page-body">
+  <header class="page-header">
+    <a href="index.html" class="back-link">← Voltar para a página inicial</a>
+    <div class="page-title-block">
+      <h1>Bhaskara – Equação do 2º grau</h1>
+      <p>Modo: MENU → EQN → Polynomial → grau 2</p>
+    </div>
+  </header>
+
+  <main class="page-layout">
+    <section class="page-text">
+      <p>
+        Nesta página você resolve equações do <strong>2º grau</strong> do tipo <strong>ax² + bx + c = 0</strong>
+        usando o modo <strong>EQN → Polynomial grau 2</strong> da fx-CG100. Muito útil em movimentos,
+        máximos/mínimos, circuitos e problemas de projeto.
+      </p>
+
+      <h2>Questão de exemplo</h2>
+      <p class="example">
+        A altura de um projétil é dada por:<br>
+        h(t) = -4,9t² + 30t + 1,5.<br>
+        Encontre os instantes em que o projétil está no chão (h = 0), usando a fx-CG100.
+      </p>
+
+      <h2 class="steps-title">Passo a passo na calculadora</h2>
+      <ol id="simSteps" class="steps-list">
+        <li data-screen="MENU → EQN → Polynomial → grau 2">Aperte <strong>MENU</strong> e selecione o ícone <strong>EQN</strong> (Equation). Dentro de EQN, escolha <strong>Polynomial</strong> e depois o grau <strong>2</strong>.</li>
+        <li data-screen="Digite a = -4.9">Coloque a equação na forma <strong>ax² + bx + c = 0</strong>. No exemplo: a = -4,9 ; b = 30 ; c = 1,5. Digite <strong>-4.9</strong> no campo <strong>a</strong> e aperte <strong>EXE</strong>.</li>
+        <li data-screen="Digite b = 30">Digite <strong>30</strong> no campo <strong>b</strong> e confirme com <strong>EXE</strong>.</li>
+        <li data-screen="Digite c = 1.5">Digite <strong>1.5</strong> no campo <strong>c</strong> e aperte <strong>EXE</strong>.</li>
+        <li data-screen="Veja x1, depois x2">A calculadora mostrará as raízes <strong>x1</strong> e <strong>x2</strong>. Use as teclas direcionais para ver cada uma delas na tela.</li>
+        <li data-screen="Escolha a raiz física (t ≥ 0)">Como o tempo físico não pode ser negativo, descarte a raiz negativa (se houver) e use a raiz positiva como o instante em que o projétil retorna ao chão.</li>
+      </ol>
+    </section>
+
+    <aside class="page-sim">
+      <div class="sim-card">
+        <div class="sim-header">
+          <span>Simulador fx-CG100</span>
+          <span class="sim-badge">EQN 2º grau</span>
+        </div>
+        <div id="simScreen" class="sim-screen">
+          Toque em “Próximo ▶” para ver o que apareceria na tela da calculadora em cada passo.
+        </div>
+        <div class="sim-steps-info">
+          Passo <span id="simStepNumber">1</span> de <span id="simStepTotal">0</span>
+        </div>
+        <div class="sim-controls">
+          <button id="simPrev">◀ Anterior</button>
+          <button id="simNext">Próximo ▶</button>
+        </div>
+        <p class="sim-tip">
+          Sempre organize a equação na forma ax² + bx + c = 0 antes de jogar os coeficientes na calculadora.
+        </p>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>

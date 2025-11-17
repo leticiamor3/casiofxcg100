@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Meia-vida – logaritmos</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="page-body">
+  <header class="page-header">
+    <a href="index.html" class="back-link">← Voltar para a página inicial</a>
+    <div class="page-title-block">
+      <h1>Meia-vida – logaritmos</h1>
+      <p>Modo: RUN-MAT usando ln</p>
+    </div>
+  </header>
+
+  <main class="page-layout">
+    <section class="page-text">
+      <p>
+        Meia-vida é muito usada em engenharia química, nuclear, ambiental e biomédica. Nesta página você aplica
+        logaritmos para descobrir quanto tempo leva para uma substância cair para uma fração da quantidade inicial.
+      </p>
+
+      <h2>Questão de exemplo</h2>
+      <p class="example">
+        Um material tem meia-vida de 8 horas.<br>
+        Em quanto tempo restam apenas 10% da quantidade inicial?
+      </p>
+
+      <h2 class="steps-title">Passo a passo na calculadora</h2>
+      <ol id="simSteps" class="steps-list">
+        <li data-screen="Modelo: Q(t) = Q0·(1/2)^(t/T½)">Use o modelo <strong>Q(t) = Q₀·(1/2)^(t/T½)</strong>. Para 10% de Q₀, temos <strong>0,1 = (1/2)^(t/T½)</strong>.</li>
+        <li data-screen="t = ln(0.1)/ln(0.5) * 8">Isolando t, obtemos <strong>t = ln(0,1)/ln(1/2) · T½</strong>. Com T½ = 8 h, fica <strong>t = ln(0.1)/ln(0.5)*8</strong>.</li>
+        <li data-screen="RUN-MAT: ln(0.1)/ln(0.5)*8">No modo RUN-MAT, digite exatamente <strong>ln(0.1)/ln(0.5)*8</strong> e aperte <strong>EXE</strong>.</li>
+        <li data-screen="Resultado de t (horas)">A calculadora mostrará o valor de <strong>t</strong> em horas. Esse é o tempo necessário para restarem apenas 10% da quantidade inicial.</li>
+        <li data-screen="Interpretar o decaimento">Use esse valor para comentar em relatórios e exercícios o quão rápido a substância decai e em quanto tempo atinge níveis seguros ou críticos.</li>
+      </ol>
+    </section>
+
+    <aside class="page-sim">
+      <div class="sim-card">
+        <div class="sim-header">
+          <span>Simulador fx-CG100</span>
+          <span class="sim-badge">Meia-vida ln</span>
+        </div>
+        <div id="simScreen" class="sim-screen">
+          Toque em “Próximo ▶” para ver o que apareceria na tela da calculadora em cada passo.
+        </div>
+        <div class="sim-steps-info">
+          Passo <span id="simStepNumber">1</span> de <span id="simStepTotal">0</span>
+        </div>
+        <div class="sim-controls">
+          <button id="simPrev">◀ Anterior</button>
+          <button id="simNext">Próximo ▶</button>
+        </div>
+        <p class="sim-tip">
+          Troque 0,1 por outras frações (0,25; 0,5; etc.) para estudar outros níveis de decaimento.
+        </p>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>

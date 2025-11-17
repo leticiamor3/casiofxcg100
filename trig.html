@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Trigonometria – sen, cos, tan</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="page-body">
+  <header class="page-header">
+    <a href="index.html" class="back-link">← Voltar para a página inicial</a>
+    <div class="page-title-block">
+      <h1>Trigonometria – sen, cos, tan</h1>
+      <p>Modo: RUN-MAT, SETUP → Angle: DEG</p>
+    </div>
+  </header>
+
+  <main class="page-layout">
+    <section class="page-text">
+      <p>
+        A trigonometria é usada o tempo todo na engenharia para decompor forças, analisar planos inclinados,
+        cabos, estruturas, momentos e muito mais. Aqui você usa <strong>SIN</strong>, <strong>COS</strong> e <strong>TAN</strong>
+        em modo grau (DEG).
+      </p>
+
+      <h2>Questão de exemplo</h2>
+      <p class="example">
+        Uma força de 500 N forma 30° com a horizontal.<br>
+        Calcule as componentes horizontal (Fx) e vertical (Fy) dessa força usando a fx-CG100.
+      </p>
+
+      <h2 class="steps-title">Passo a passo na calculadora</h2>
+      <ol id="simSteps" class="steps-list">
+        <li data-screen="SETUP → Angle = DEG">Primeiro, confira se a calculadora está em graus: entre em <strong>SETUP</strong> e verifique se o ângulo está em <strong>DEG</strong> (Degree).</li>
+        <li data-screen="Fx = 500*cos(30)">No modo RUN-MAT, digite <strong>500*cos(30)</strong> e aperte <strong>EXE</strong>. Esse é o valor de <strong>Fx</strong>, a componente horizontal da força.</li>
+        <li data-screen="Fy = 500*sin(30)">Depois, digite <strong>500*sin(30)</strong> e aperte <strong>EXE</strong>. Esse é o valor de <strong>Fy</strong>, a componente vertical.</li>
+        <li data-screen="Interpretar Fx e Fy">Anote os valores aproximados (Fx ≈ 433 N, Fy ≈ 250 N) e use essas componentes para montar as equações de equilíbrio no problema.</li>
+      </ol>
+    </section>
+
+    <aside class="page-sim">
+      <div class="sim-card">
+        <div class="sim-header">
+          <span>Simulador fx-CG100</span>
+          <span class="sim-badge">Trig DEG</span>
+        </div>
+        <div id="simScreen" class="sim-screen">
+          Toque em “Próximo ▶” para ver o que apareceria na tela da calculadora em cada passo.
+        </div>
+        <div class="sim-steps-info">
+          Passo <span id="simStepNumber">1</span> de <span id="simStepTotal">0</span>
+        </div>
+        <div class="sim-controls">
+          <button id="simPrev">◀ Anterior</button>
+          <button id="simNext">Próximo ▶</button>
+        </div>
+        <p class="sim-tip">
+          Se o resultado estiver estranho, confira se a calculadora está em DEG e não em RAD.
+        </p>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>
